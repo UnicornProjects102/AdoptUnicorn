@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unicorn Adoption</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="logo">
+        <a href="#nav"><img id="logo" src="images/logo.png" alt="logo" /></a>
+        <span id="menu_icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+
+      <span class="nav_links">
+        <a class="nav_link" href="#about_section">about us</a>
+        <a class="nav_link" href="#adopt_section">adopt</a>
+        <a class="nav_link" href="#foster_section">foster</a>
+        <a class="nav_link" href="#contact_section">contact</a>
+      </span>
+      <span class="btn_donate_span">
+        <button class="btn" id="btn_donate">donate</button>
+      </span>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div id="photo_1" class="banner_photo">
+        <img src="images/banner1.jpg" alt="">
+      </div>
+      <div id="photo_2" class="banner_photo">
+        <img src="images/banner2.jpg" alt="">
+      </div>
+      <div id="photo_3" class="banner_photo">
+        <img src="images/banner3.jpg" alt="">
+      </div>
+      <div id="photo_4" class="banner_photo">
+        <img src="images/banner4.jpg" alt="">
+      </div>
+
+    </div>
+   
+    <!--about us  section-->
+    <a name="about_section"></a>
+    <section id="about_section">
+      <div class="section_header">
+        <div class="section_decor"></div>
+        <p class="header_title">About us</p>
+        <div class="section_decor"></div>
+      </div>
+      <div class="about_wrap">
+        <div class="about_text">
+          <div id="about_1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div id="about_2">
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              asperiores.
+            </blockquote>
+            <cite> &mdash; Famous person</cite>
+          </div>
+
+          <div id="about_3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            molestias officiis quo voluptas iure nihil hic quis beatae
+            necessitatibus illo doloremque ipsam veniam doloribus delectus,
+            velit magni at? Necessitatibus, eius. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ratione molestias fuga eius saepe
+            tempore deleniti itaque sed molestiae enim perferendis!
+          </div>
+          <div id="about_4">
+            <button class="btn" id="btn_about">more info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- adopt section -->
+    <a name="adopt_section"></a>
+    <section id="adopt_section">
+      <div class="section_header">
+        <div class="section_decor"></div>
+        <p class="header_title">Adopt</p>
+        <div class="section_decor"></div>
+      </div>
+      <div class="unicorns_container">
+        <!-- <div class="unicorns_card">
+          <div class="card_first">
+           <img class="card_img" src="/images/unicorn1.jpg">
+           <div class="card_info_icon"><i class="fas fa-info-circle"></i></div>
+           </div>
+           <div class="card_second">
+             <div class="card_close"><i class="fas fa-chevron-down"></i></div>
+           <h3 class="card_name">${unicorn.name}</h3>
+           <div class="card_info">
+           <h4>Born: ${unicorn.birth},</h4>
+           <h4>${unicorn.gender}</h4>
+           </div>
+           <h4 class="card_about_title">About ${unicorn.name}:</h4>
+           <p class="card_about">${unicorn.about}</p>
+           <button onclick="adopt('${unicorn.name}')" class="card_btn_adopt"><a href="#contact_section">adopt</a></button>
+           </div>
+           </div> -->
+         </div>
+       
+       </div>
+      </div>
+    </section>
+
+    <!-- foster section -->
+    <a name="foster_section"></a>
+    <section class="foster_section">
+      <div class="section_header">
+        <div class="section_decor"></div>
+        <p class="header_title">Foster</p>
+        <div class="section_decor"></div>
+      </div>
+      <div class="foster_wrap">
+        <h3 id="foster_title">Lorem ipsum dolor sit amet consectetur?</h3>
+        <div class="foster_flexbox">
+          <img
+            class="foster_img"
+            id="foster_img"
+            src="images/foster_img.jpg"
+            alt=""
+          />
+
+          <div class="foster_textbox">
+            <div id="foster_text">
+              <h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
+                quia?
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores inventore nam doloremque repellat dolor! Quaerat
+                laborum nam dolorem ad vero tenetur, fugiat dolore porro
+                eligendi dolorum accusantium atque quo accusamus eveniet ex
+                molestiae rerum iusto veniam. Laudantium ducimus facilis minus.
+              </p>
+            </div>
+            <button id="btn_foster">Become a foster home</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact us section -->
+    <a name="contact_section"></a>
+    <section class="contact_us_section">
+      <div class="section_header">
+        <div class="section_decor"></div>
+        <p class="header_title">Contact us</p>
+        <div class="section_decor"></div>
+      </div>
+      
+      <div class="form_container">
+        <div class="message_sent">
+          <h2>Message sent.</h2>
+          <h3>Thank you for contacting us!</h3>
+        </div>
+        <div class="validation_message">
+          <p>Fill in all the fields to send a message.</p>
+        </div>
+        <h3 id="form_title">Lorem ipsum dolor sit amet.</h3>
+        <form id="form">
+          <input type="text" id="name" name="name" placeholder="your name" />
+
+          <input type="text" id="email" name="email" placeholder="your email" />
+
+          <label id="topic_label" for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="default">Choose topic</option>
+            <option value="adoption">Adoption</option>
+            <option value="fostering">Fostering</option>
+            <option value="donation">Donation</option>
+            <option value="other">Other</option>
+          </select>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="your message"
+            style="height: 200px;"
+          ></textarea>
+
+          <input id="form_submit" type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p>&copy;Copyright 2020</p>
+        <div class="footer_icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+
+   
+    <script
+      src="https://kit.fontawesome.com/effcc88c36.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js -->
+    <script src="app.js"></script>
+  </body>
+</html>
